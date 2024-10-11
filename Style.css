@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Handwriting';
+    src: url('Handwriting.ttf') format('truetype'); /* Adjust the path if necessary */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -40,10 +45,10 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 40px; /* Add some padding for better spacing */
+    padding: 40px;
     font-size: 20px;
     backface-visibility: hidden;
-    font-family: 'Cute Font', cursive; /* Apply Cute Font */
+    font-family: 'Handwriting', cursive; /* Apply local Handwriting font */
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4); /* Add drop shadow */
 }
 
@@ -51,12 +56,12 @@ body {
     transform: rotateY(180deg);
 }
 
-.top-right {
+.top-left {
     position: absolute;
-    top: 20px; /* Adjust distance from the top */
-    right: 20px; /* Adjust distance from the right */
+    top: 20px;
+    left: 20px;
     font-size: 24px;
-    text-align: right;
-    font-family: 'Cute Font', cursive;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add subtle shadow */
+    text-align: left;
+    font-family: 'Handwriting', cursive; /* Apply local Handwriting font */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
